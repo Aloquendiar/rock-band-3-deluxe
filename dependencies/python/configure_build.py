@@ -49,7 +49,6 @@ match sys.platform:
         ninja.variable("silence", ">nul")
         ninja.rule("copy", "cmd /c copy $in $out $silence", description="COPY $in")
         ninja.rule("bswap", "dependencies\\windows\\swap_art_bytes.exe $in $out", description="BSWAP $in")
-        ninja.rule("version", "python dependencies\\python\\gen_version.py $out", description="Writing version info")
         ninja.rule("defines", "python dependencies\\python\\gen_defines.py $out $defines", description="Generating build defines")
         ninja.rule("png_list", "python dependencies\\python\\png_list.py $dir $out", description="PNGLIST $dir")
         ninja.rule("generate_theme_data", "python dependencies\\python\\generate_theme_data.py $dir $out", description="THEMEDATA $dir")
@@ -67,7 +66,6 @@ match sys.platform:
         ninja.variable("silence", "> /dev/null")
         ninja.rule("copy", "cp $in $out", description="COPY $in")
         ninja.rule("bswap", "python3 dependencies/python/swap_rb_art_bytes.py $in $out", description="BSWAP $in")
-        ninja.rule("version", "python3 dependencies/python/gen_version.py $out", description="Writing version info")
         ninja.rule("defines", "python3 dependencies/python/gen_defines.py $out $defines", description="Generating build defines")
         ninja.rule("png_list", "python3 dependencies/python/png_list.py $dir $out", description="PNGLIST $dir")
         ninja.rule("generate_theme_data", "python3 dependencies/python/generate_theme_data.py $dir $out", description="THEMEDATA $dir")
@@ -85,7 +83,6 @@ match sys.platform:
         ninja.variable("silence", "> /dev/null")
         ninja.rule("copy", "cp --reflink=auto $in $out",description="COPY $in")
         ninja.rule("bswap", "dependencies/linux/swap_art_bytes $in $out", "BSWAP $in")
-        ninja.rule("version", "python dependencies/python/gen_version.py $out", description="Writing version info")
         ninja.rule("defines", "python dependencies/python/gen_defines.py $out $defines", description="Generating build defines")
         ninja.rule("png_list", "python dependencies/python/png_list.py $dir $out", description="PNGLIST $dir")
         ninja.rule("generate_theme_data", "python dependencies/python/generate_theme_data.py $dir $out", description="THEMEDATA $dir")
@@ -257,9 +254,9 @@ for f in filter(ark_file_filter, Path("_ark").rglob("*")):
                 ark_files.append(str(out_path))
 
 # write version info
-dta = Path("obj", args.platform, "raw", "dx", "locale", "dx_version.dta")
-dtb = Path("obj", args.platform, "raw", "dx", "locale", "gen", "dx_version.dtb")
-enc = Path("obj", args.platform, "ark", "dx", "locale", "gen", "dx_version.dtb")
+#dta = Path("obj", args.platform, "raw", "dx", "locale", "dx_version.dta")
+#dtb = Path("obj", args.platform, "raw", "dx", "locale", "gen", "dx_version.dtb")
+#enc = Path("obj", args.platform, "ark", "dx", "locale", "gen", "dx_version.dtb")
 
 ninja.build(str(dta), "version", implicit="_always")
 ninja.build(str(dtb), "dtab_serialize", str(dta))
