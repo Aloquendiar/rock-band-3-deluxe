@@ -259,10 +259,10 @@ for f in filter(ark_file_filter, Path("_ark").rglob("*")):
 #enc = Path("obj", args.platform, "ark", "dx", "locale", "gen", "dx_version.dtb")
 
 #ninja.build(str(dta), "version", implicit="_always")
-ninja.build(str(dtb), "dtab_serialize", str(dta))
-ninja.build(str(enc), "dtab_encrypt", str(dtb))
+#ninja.build(str(dtb), "dtab_serialize", str(dta))
+#ninja.build(str(enc), "dtab_encrypt", str(dtb))
 
-ark_files.append(str(enc))
+#ark_files.append(str(enc))
 
 # generate song update hash
 #dta = Path("obj", args.platform, "raw", "dx", "dx_song_update_hash.dta")
@@ -273,7 +273,7 @@ ark_files.append(str(enc))
 #ninja.build(str(dtb), "dtab_serialize", str(dta))
 #ninja.build(str(enc), "dtab_encrypt", str(dtb))
 
-ark_files.append(str(enc))
+#ark_files.append(str(enc))
 
 # generate build defines
 dta = Path("obj", args.platform, "raw", "dx", "macros", "dx_build_macros.dta")
