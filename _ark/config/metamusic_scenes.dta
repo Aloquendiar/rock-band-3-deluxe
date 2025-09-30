@@ -1,6 +1,5 @@
 (metamusic_scene_nochange
-   (screens basic_confirm_dialog_screen basic_confirm_dialog_small_screen)
-)
+   (screens basic_confirm_dialog_screen basic_confirm_dialog_small_screen))
 (splash_screen_shell
    (screens splash_screen)
    (mix
@@ -18,9 +17,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -33,9 +30,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -48,9 +43,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -63,9 +56,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -78,9 +69,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -93,17 +82,9 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_shell
-   (screens
-      main_hub_screen
-      customize_create_character_screen
-      customize_no_prefabs_screen
-   )
+   (screens main_hub_screen customize_create_character_screen customize_no_prefabs_screen)
    (mix
       (vols 0.0 0.0 0.0 0.0 0.0 0.0)
       (pans -1.0 1.0 0.0 -1.0 1.0 -0.5)
@@ -119,9 +100,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -134,9 +113,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -149,9 +126,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -164,9 +139,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -179,9 +152,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -194,11 +165,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_quickplay
    (mix
       (vols 0.0 0.0 0.0 0.0 0.0 0.0)
@@ -215,9 +182,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -230,9 +195,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -245,9 +208,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -260,9 +221,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -275,9 +234,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -290,11 +247,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_chooseband
    (screens create_band_screen)
    (mix
@@ -312,9 +265,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -327,9 +278,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -342,9 +291,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -357,9 +304,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -372,9 +317,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -387,23 +330,9 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_campaign
-   (screens
-      campaign_leaderboard_hub_screen
-      campaign_goals_leaderboard_choice_screen
-      campaign_goals_leaderboard_screen
-      campaign_career_leaderboard_choice_screen
-      campaign_career_dlc_leaderboard_choice_screen
-      campaign_career_leaderboard_screen
-      campaign_career_dlc_leaderboard_screen
-      accomplishment_screen
-      accomplishment_songs_screen
-   )
+   (screens campaign_leaderboard_hub_screen campaign_goals_leaderboard_choice_screen campaign_goals_leaderboard_screen campaign_career_leaderboard_choice_screen campaign_career_dlc_leaderboard_choice_screen campaign_career_leaderboard_screen campaign_career_dlc_leaderboard_screen accomplishment_screen accomplishment_songs_screen)
    (mix
       (vols 0.0 0.0 0.0 -96.0 -96.0 -5.0)
       (pans -1.0 1.0 0.0 -1.0 1.0 0.7)
@@ -419,9 +348,7 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -434,9 +361,7 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -449,9 +374,7 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -464,9 +387,7 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -479,9 +400,7 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -494,19 +413,9 @@
             (low_pass_cutoff 400)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_tour_1
-   (screens
-      tour_customize_screen
-      tour_customize_post_screen
-      tour_gigguide_init_screen
-      tour_gigguide_challenge_screen
-      tour_newcontinue_screen
-   )
+   (screens tour_customize_screen tour_customize_post_screen tour_gigguide_init_screen tour_gigguide_challenge_screen tour_newcontinue_screen)
    (mix
       (vols -96.0 -96.0 2.0 -96.0 -96.0 -96.0)
       (pans -1.0 1.0 0.0 -1.0 1.0 0.0)
@@ -522,9 +431,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -537,9 +444,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -552,9 +457,7 @@
             (low_pass_cutoff 3000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -567,9 +470,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -582,9 +483,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -597,19 +496,9 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_tour_2
-   (screens
-      tour_gigguide_screen
-      tour_part_difficulty_screen
-      part_difficulty_screen
-      dx_play_a_show_screen
-      tour_welcome_screen
-   )
+   (screens tour_gigguide_screen tour_part_difficulty_screen part_difficulty_screen tour_welcome_screen)
    (mix
       (vols 0.0 0.0 -96.0 -9.0 -9.0 -96.0)
       (pans -1.0 1.0 0.0 -1.0 1.0 0.0)
@@ -625,9 +514,7 @@
             (low_pass_cutoff 4000)
             (low_pass_reso 10)
             (high_pass_cutoff 800)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -640,9 +527,7 @@
             (low_pass_cutoff 4000)
             (low_pass_reso 10)
             (high_pass_cutoff 800)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -655,9 +540,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 0)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -670,9 +553,7 @@
             (low_pass_cutoff 4000)
             (low_pass_reso 10)
             (high_pass_cutoff 800)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -685,9 +566,7 @@
             (low_pass_cutoff 4000)
             (low_pass_reso 10)
             (high_pass_cutoff 800)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -700,25 +579,9 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_store
-   (screens
-      token_redemption_screen
-      token_redemption_dialog_screen
-      store_real_loading_screen
-      store_loading_screen
-      store_menu_screen
-      main_store_signin_screen
-      store_need_to_signin_not_guest
-      store_need_to_signin
-      meta_loading_audition_screen
-      audition_main_screen
-      audition_session_screen
-   )
+   (screens token_redemption_screen token_redemption_dialog_screen store_real_loading_screen store_loading_screen store_menu_screen main_store_signin_screen store_need_to_signin_not_guest store_need_to_signin meta_loading_audition_screen audition_main_screen audition_session_screen)
    (mix
       (vols -96.0 -96.0 -6.0 -6.0 -6.0 -6.0)
       (pans -0.5 1.0 0.5 -0.5 1.0 0.0)
@@ -734,9 +597,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -749,9 +610,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -764,9 +623,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -779,9 +636,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -794,9 +649,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -809,11 +662,7 @@
             (low_pass_cutoff 1500)
             (low_pass_reso 5)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_musiclibrary
    (screens)
    (mix
@@ -831,9 +680,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -846,9 +693,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -861,9 +706,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -876,9 +719,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -891,9 +732,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -906,11 +745,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_audition
    (mix
       (vols 0.0 0.0 0.0 0.0 0.0 0.0)
@@ -927,9 +762,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -942,9 +775,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -957,9 +788,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -972,9 +801,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -987,9 +814,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1002,11 +827,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_tattoo
    (screens customize_tattoo_screen)
    (mix
@@ -1024,9 +845,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1039,9 +858,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1054,9 +871,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1069,9 +884,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1084,9 +897,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1099,20 +910,9 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_artmaker
-   (screens
-      patch_screen
-      delete_patch_layer_confirm_screen
-      patch_delete_screen
-      patch_select_screen
-      patch_select_practice_space_screen
-      patch_entry_closet_screen
-   )
+   (screens patch_screen delete_patch_layer_confirm_screen patch_delete_screen patch_select_screen patch_select_practice_space_screen patch_entry_closet_screen)
    (mix
       (vols 0.0 0.0 -6.0 -96.0 -96.0 -96.0)
       (pans -5.0 5.0 0.0 -1.0 1.0 0.0)
@@ -1128,9 +928,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1143,9 +941,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1158,9 +954,7 @@
             (low_pass_cutoff 1000)
             (low_pass_reso 8)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1173,9 +967,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1188,9 +980,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1203,11 +993,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 0)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (manage_band
    (screens manage_band_screen patch_entry_screen manage_band_standins_screen)
    (mix
@@ -1225,9 +1011,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1240,9 +1024,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1255,9 +1037,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1270,9 +1050,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1285,9 +1063,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1300,25 +1076,9 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 0)
             (high_pass_cutoff 1000)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_charactercreator
-   (screens
-      charactercreator_screen
-      charactercreator_leave_screen
-      charactercreator_noname_screen
-      charactercreator_create_screen
-      charactercreator_confirm_randomize_face_screen
-      customize_clothing_screen
-      customize_instrument_screen
-      customize_salon_screen
-      customize_need_signin_screen
-      choose_color_screen
-      choose_finish_screen
-   )
+   (screens charactercreator_screen charactercreator_leave_screen charactercreator_noname_screen charactercreator_create_screen charactercreator_confirm_randomize_face_screen customize_clothing_screen customize_instrument_screen customize_salon_screen customize_need_signin_screen choose_color_screen choose_finish_screen)
    (mix
       (vols -3.0 -3.0 -0.0 -96.0 -96.0 0.0)
       (pans -0.5 0.5 0.0 -1.0 1.0 0.0)
@@ -1334,9 +1094,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1349,9 +1107,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1364,9 +1120,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1379,9 +1133,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1394,9 +1146,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1409,11 +1159,7 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 5)
             (high_pass_cutoff 500)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_training
    (screens hint_prodrums_screen training_screen)
    (mix
@@ -1431,9 +1177,7 @@
             (low_pass_cutoff 6000)
             (low_pass_reso 10)
             (high_pass_cutoff 400)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1446,9 +1190,7 @@
             (low_pass_cutoff 6000)
             (low_pass_reso 10)
             (high_pass_cutoff 400)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1461,9 +1203,7 @@
             (low_pass_cutoff 6000)
             (low_pass_reso 10)
             (high_pass_cutoff 400)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1476,9 +1216,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1491,9 +1229,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1506,11 +1242,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
 (metamusic_scene_calibration
    (screens)
    (mix
@@ -1528,9 +1260,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_2
          (eq.send
             (high_frequency 10000)
@@ -1543,9 +1273,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_3
          (eq.send
             (high_frequency 10000)
@@ -1558,9 +1286,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_4
          (eq.send
             (high_frequency 10000)
@@ -1573,9 +1299,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_5
          (eq.send
             (high_frequency 10000)
@@ -1588,9 +1312,7 @@
             (low_pass_cutoff 20000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
+            (high_pass_reso 0)))
       (channel_6
          (eq.send
             (high_frequency 10000)
@@ -1603,8 +1325,4 @@
             (low_pass_cutoff 2000)
             (low_pass_reso 10)
             (high_pass_cutoff 20)
-            (high_pass_reso 0)
-         )
-      )
-   )
-)
+            (high_pass_reso 0)))))
