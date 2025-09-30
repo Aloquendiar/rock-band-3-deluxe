@@ -1,7 +1,5 @@
 #include ../vanilla_plus/song_updates/harmonix_upgrades.dta
 #merge ../vanilla_plus/song_updates/official_additional_metadata.dta
-#merge ../vanilla_plus/song_updates/unofficial_additional_metadata.dta
-#merge ../vanilla_plus/song_updates/metadata_updates.dta
 #merge ../vanilla_plus/song_updates/harms_and_updates.dta
 #merge ../vanilla_plus/song_updates/rbhp_upgrades.dta
 #merge ../vanilla_plus/song_updates/rb_plus_upgrades.dta

@@ -110,6 +110,8 @@
    "Para entrar en el modo Prueba debes haber iniciado sesión con un perfil de jugador que esté configurado para Xbox LIVE y que sea miembro del XNA Creators Club, además de haberte conectado a Xbox LIVE.")
 (error_club_member_signed_out
    "El perfil de jugador que estaba accediendo al modo Prueba como miembro del XNA Creators Club ha cerrado su sesión.")
+(the1900s
+   "Temas de los 00")
 (the1920s
    "Temas de los 20")
 (the1930s
@@ -118,6 +120,9 @@
    "Temas de los 40")
 (the1950s
    "Temas de los 50")
+(the2020s
+   "Temas del 2020")
+(vocal_parts_0 "Sin Vocales")
 (audition_session_no_part
    "N/A")
 (audition_session_none

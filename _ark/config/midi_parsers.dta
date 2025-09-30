@@ -8,7 +8,7 @@
          {exists meta_performer}
          {exists song_mgr}
          {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-         {!{'||' {== $sourcevar rb3} {== $sourcevar rb3_dlc} {== $sourcevar rb3dlc} {== $sourcevar blitz}}}
+         ;{!{'||' {== $sourcevar rb3} {== $sourcevar rb3_dlc} {== $sourcevar rb3dlc} {== $sourcevar blitz}}}
       }
    }
    {func is_ver_29
@@ -1961,7 +1961,7 @@
             {if {&& {== $mp.val end} $banddirector}
                {$banddirector set_end {beat_to_seconds $mp.start}}
                {set $add_end_shot FALSE}
-               {set $dx_end_of_song $mp.start}
+               ;{set $dx_end_of_song $mp.start}
             }
          )
       }
@@ -2169,9 +2169,6 @@
                (init
                   {set [zero_length] TRUE}
                   {set [enabled] {is_ver_30}}
-                  {if {! $dx_venue_lights}
-                     {set [enabled] FALSE}
-                  }
                )
                (text
                   {if {&& [enabled] {== $mp.val lighting}}
@@ -2197,9 +2194,6 @@
                   {set [zero_length] TRUE}
                   {set [legacy_presets] FALSE}
                   {set [enabled] {! {is_ver_30}}}
-                  {if {! $dx_venue_lights}
-                     {set [enabled] FALSE}
-                  }
                )
                (term
                   {if [legacy_presets]
@@ -2480,7 +2474,7 @@
                            }
                         }
                         {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-                        {!= $sourcevar ugc2} ; This is necessary to avoid problems with rbn 2.0 stuff
+                        ;{!= $sourcevar ugc2} ; This is necessary to avoid problems with rbn 2.0 stuff
                      }
                      {set [enabled] TRUE}
                   }
