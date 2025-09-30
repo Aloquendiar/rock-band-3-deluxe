@@ -3,44 +3,44 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build_yarg:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+  # build_yarg:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+  #     - name: Set up Python 3.11
+  #       uses: actions/setup-python@v5
+  #       with:
+  #         python-version: '3.11'
 
-      - name: Build Files
-        run: |
-          dependencies/python/configure_yarg_build.py
-          dependencies/linux/ninja
+  #     - name: Build Files
+  #       run: |
+  #         dependencies/python/configure_yarg_build.py
+  #         dependencies/linux/ninja
 
-      # --- Build arson-fmt (Rust) ---
-      - name: Install Rust (stable)
-        uses: dtolnay/rust-toolchain@stable
+  #     # --- Build arson-fmt (Rust) ---
+  #     - name: Install Rust (stable)
+  #       uses: dtolnay/rust-toolchain@stable
 
-      - name: Checkout arson repo
-        uses: actions/checkout@v4
-        with:
-          repository: hmxmilohax/arson
-          path: arson
+  #     - name: Checkout arson repo
+  #       uses: actions/checkout@v4
+  #       with:
+  #         repository: hmxmilohax/arson
+  #         path: arson
 
-      - name: Cargo build arson-fmt
-        working-directory: arson
-        run: cargo build
+  #     - name: Cargo build arson-fmt
+  #       working-directory: arson
+  #       run: cargo build
 
-      - name: Format songs_updates.dta with arson-fmt
-        run: |
-          ./arson/target/debug/arson-fmt "$GITHUB_WORKSPACE/out/yarg/songs_updates/songs_updates.dta"
+  #     - name: Format songs_updates.dta with arson-fmt
+  #       run: |
+  #         ./arson/target/debug/arson-fmt "$GITHUB_WORKSPACE/out/yarg/songs_updates/songs_updates.dta"
 
-      - name: Upload result
-        uses: actions/upload-artifact@v4
-        with:
-          name: RB3DX-YARG-Updates
-          path: out/yarg
+  #     - name: Upload result
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: RB3DX-YARG-Updates
+  #         path: out/yarg
 
 
   build_xbox:
@@ -108,57 +108,57 @@ jobs:
           name: RB3DX-PS3
           path: '*.pkg'
 
-  build_xbox_ptbr:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Translate locale
-        run: |
-          python dependencies/python/ptbr.py
-        working-directory: ${{ github.workspace }}
-      - name: Build ARK
-        run: |
-          dependencies/python/configure_build.py xbox
-          dependencies/linux/ninja
-      - name: Remove .gitkeep
-        run: |
-          find . -name ".gitkeep" -type f -delete
-      - name: Upload result
-        uses: actions/upload-artifact@v4
-        with:
-          name: RB3DX-Xbox-BRAZIL
-          path: out/xbox
+  # build_xbox_ptbr:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Set up Python 3.11
+  #       uses: actions/setup-python@v5
+  #       with:
+  #         python-version: '3.11'
+  #     - name: Translate locale
+  #       run: |
+  #         python dependencies/python/ptbr.py
+  #       working-directory: ${{ github.workspace }}
+  #     - name: Build ARK
+  #       run: |
+  #         dependencies/python/configure_build.py xbox
+  #         dependencies/linux/ninja
+  #     - name: Remove .gitkeep
+  #       run: |
+  #         find . -name ".gitkeep" -type f -delete
+  #     - name: Upload result
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: RB3DX-Xbox-BRAZIL
+  #         path: out/xbox
 
-  build_ps3_ptbr:
-    runs-on: windows-2025
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Translate locale
-        run: |
-          python dependencies/python/ptbr.py
-        working-directory: ${{ github.workspace }}
-      - name: Build ARK
-        run: |
-          python dependencies/python/configure_build.py ps3
-          dependencies/windows/ninja.exe
-      - name: Build PKG
-        run: |
-          $sha_short="$(git rev-parse --short HEAD)".ToUpper()
-          $content="RB3DXNITE"
-          dependencies/windows/RB3DXBuildPkgPS3.exe out/ps3 usa ($content + $sha_short) .
-      - name: Upload result
-        uses: actions/upload-artifact@v4
-        with:
-          name: RB3DX-PS3-BRAZIL
-          path: '*.pkg'
+  # build_ps3_ptbr:
+  #   runs-on: windows-2025
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Set up Python 3.11
+  #       uses: actions/setup-python@v5
+  #       with:
+  #         python-version: '3.11'
+  #     - name: Translate locale
+  #       run: |
+  #         python dependencies/python/ptbr.py
+  #       working-directory: ${{ github.workspace }}
+  #     - name: Build ARK
+  #       run: |
+  #         python dependencies/python/configure_build.py ps3
+  #         dependencies/windows/ninja.exe
+  #     - name: Build PKG
+  #       run: |
+  #         $sha_short="$(git rev-parse --short HEAD)".ToUpper()
+  #         $content="RB3DXNITE"
+  #         dependencies/windows/RB3DXBuildPkgPS3.exe out/ps3 usa ($content + $sha_short) .
+  #     - name: Upload result
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: RB3DX-PS3-BRAZIL
+  #         path: '*.pkg'
 
   build_wii:
     runs-on: ubuntu-latest
