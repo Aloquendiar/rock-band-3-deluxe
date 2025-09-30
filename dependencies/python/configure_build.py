@@ -258,7 +258,7 @@ for f in filter(ark_file_filter, Path("_ark").rglob("*")):
 #dtb = Path("obj", args.platform, "raw", "dx", "locale", "gen", "dx_version.dtb")
 #enc = Path("obj", args.platform, "ark", "dx", "locale", "gen", "dx_version.dtb")
 
-ninja.build(str(dta), "version", implicit="_always")
+#ninja.build(str(dta), "version", implicit="_always")
 ninja.build(str(dtb), "dtab_serialize", str(dta))
 ninja.build(str(enc), "dtab_encrypt", str(dtb))
 
