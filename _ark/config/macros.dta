@@ -303,6 +303,8 @@
 (32)
 #define kCharNameLength
 (25)
+#define CUSTOMSOURCE
+(1)
 #define kDifficultyEasy
 (0)
 #define kDifficultyMedium
