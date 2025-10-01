@@ -8,12 +8,12 @@
 ## TODO
  These are features I would like to support in the future, but it may take me a while to read through them before porting them.
 * [ ] Author Finder (Source and author name only)
-       * The rest of the metadata is not very relevant to be honest.
+* The rest of the metadata is not very relevant to be honest.
 * [ ] Lyric display
 * [ ] Golden Stars Animation
 * [ ] Countdown
 * [ ] Custom Textures
-      * This is what I think will be the most difficult thing to bring here.
+* This is what I think will be the most difficult thing to bring here.
 This doesn't mean that there may be other functions implemented here, but I need to see their previous importance and if PS3 takes it well.
 
 # 🖥️ Dependencies
