@@ -167,3 +167,8 @@
    "Song Lessons are not available for RBN songs")
 (bad_review_showing
    "Show 1-Lighter Reviewed Songs")
+;source add
+(rb4 "Rock Band 4")
+(ugc2 "Rock Band Network 2.0")
+(ugc1 "Rock Band Network 1.0")
+(ugc "Custom Songs")
