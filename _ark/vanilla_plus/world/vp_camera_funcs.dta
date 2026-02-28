@@ -1,0 +1,17 @@
+{func dx_ultra_shadows
+      {ui foreach_screen $screen
+         {$screen foreach_panel $panel
+            {if {$panel loaded_dir}
+               {{$panel loaded_dir} iterate RndDir $b
+                  {$b iterate BandCamShot $d
+                     {$d set self_shadow $enabled}
+                     {$d set ps3_per_pixel $enabled}
+                  }
+                  {$b iterate BandCharacter $c
+                     {$c set self_shadow $enabled}
+                  }
+               }
+            }
+         }
+      }
+}
