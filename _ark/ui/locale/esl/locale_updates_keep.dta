@@ -172,6 +172,7 @@
    "Lecciones musicales no disponibles para las canciones de la RBN")
 (bad_review_showing
    "Ver temas calif. con 1 mechero")
+(filter_rb4 "Rock Band 4")
 ;dlc adicional
 (rb4 "Rock Band 4")
 (ugc2 "Rock Band Network 2.0")

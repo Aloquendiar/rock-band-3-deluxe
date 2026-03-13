@@ -118,6 +118,9 @@
    "'40s Songs")
 (the1950s
    "'50s Songs")
+(the2020s
+   "2020 Songs")
+(vocal_parts_0 "No Vocals")
 (audition_session_no_part
    "no part")
 (audition_session_none
@@ -167,6 +170,7 @@
    "Song Lessons are not available for RBN songs")
 (bad_review_showing
    "Show 1-Lighter Reviewed Songs")
+(filter_rb4 "Rock Band 4")
 ;source add
 (rb4 "Rock Band 4")
 (ugc2 "Rock Band Network 2.0")
