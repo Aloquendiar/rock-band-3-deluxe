@@ -999,6 +999,12 @@
          {$component selected_sym}
          (overshell_credits
             {$this show_enter_credits})
+         (refresh_library
+            {if {! {session is_in_game}}
+               {content_mgr remove_content kDataUnhandled}
+               {content_mgr start_refresh}
+            }
+         )
          (overshell_linking_code
             {if_else
                {&&
