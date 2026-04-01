@@ -148,6 +148,7 @@
                set_data
                (overshell_credits
                   overshell_linking_code
+                  refresh_library
                   #ifdef HX_XBOX
                   overshell_audition
                   #endif)}
