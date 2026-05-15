@@ -194,7 +194,7 @@
    (wrist
       "ui/customize/image/wrists_keep.png"))
 (data_point_mgr
-   (filters))
+   (filters)) ;band4
 (in_game_tutorials
    #include in_game_tutorials.dta)
 #ifdef HX_XBOX
