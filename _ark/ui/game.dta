@@ -2,9 +2,6 @@
 #include pause_mics_helper.dta
 #define LOSE_MUSIC_SLOW_SEC
 (2)
-{unless {gamemode in_mode trainer}
-   {set $dx_apply_postproc TRUE}
-}
 {new
    GamePanel
    game
