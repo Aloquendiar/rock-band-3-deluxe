@@ -5,7 +5,7 @@
 ### Installing on PS3
 * In the action section you will find the most current build of Vanilla Plus, which will be updated from time to time. You need a GitHub account to download it.
 * It's a pkg in .zip just extract it and install it on your ps3
-## TODO
+## TODO 1
  These are features I would like to support in the future, but it may take me a while to read through them before porting them.
 * [ ] Author Finder (Source and author name only)
 * The rest of the metadata is not very relevant to be honest.
