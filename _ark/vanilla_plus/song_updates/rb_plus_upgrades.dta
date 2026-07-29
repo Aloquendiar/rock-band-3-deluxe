@@ -675,6 +675,21 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
 )
+(ourlipsaresealed
+   (upgrade_version 1)
+   (rank
+      (drum 162)
+      (guitar 133)
+      (bass 143)
+      (vocals 146)
+      (real_guitar 193)
+      (real_bass 120)
+      (band 161)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "WarGod")
+)
 (outside
    (upgrade_version 1)
    (song
@@ -1833,12 +1848,12 @@
       (bass 248)
       (vocals 248)
       (real_guitar 268)
-      (real_bass 228)
+      (real_bass 313)
       (band 158)
    )
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (-2 0 0 0))
-   (strings_author "RK")
+   (strings_author "RK, JDK, Aloquendiar")
 )
 (peacesells
    (upgrade_version 1)
@@ -2770,6 +2785,21 @@
 )
 
 ; Green Day: Rock Band
+(boulevardof
+   (upgrade_version 1)
+   (rank
+      (drum 123)
+      (guitar 193)
+      (bass 136)
+      (vocals 155)
+      (real_guitar 165)
+      (real_bass 118)
+      (band 158)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "Moo")
+)
 (lastnightonearth
    (upgrade_version 1)
    (rank
@@ -2862,6 +2892,21 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "WarGod")
 )
+(adioslepido
+   (upgrade_version 1)
+   (rank
+      (drum 215)
+      (guitar 304)
+      (bass 175)
+      (vocals 249)
+      (real_guitar 263)
+      (real_bass 265)
+      (band 245)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "Aloquendiar")
+)
 (afterlife
    (song
       (tracks
@@ -2887,6 +2932,23 @@
    (version 30)
    (keys_author "BowlsforRick")
 )
+(airplanes
+   (upgrade_version 1)
+   (rank
+      (drum 233)
+      (guitar 130)
+      (bass 129)
+      (vocals 193)
+      (keys 150)
+      (real_guitar 156)
+      (real_bass 154)
+      (real_keys 177)
+      (band 175)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "JDK")
+)
 (allofthis
    (upgrade_version 1)
    (rank
@@ -2909,6 +2971,7 @@
          (bass 2)
          (guitar (3 4))
          (vocals 5)
+         (keys 6 7)
         )
      )
      (crowd_channels 8 9)
@@ -2941,6 +3004,30 @@
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
    (strings_author "JDK")
+)
+(americanmusic
+   (song
+      (tracks
+         (
+            (drum (0 1 2))
+            (bass 3)
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 276)
+      (guitar 259)
+      (bass 351)
+      (vocals 255)
+      (keys 247)
+      (real_keys 247)
+      (band 294)
+   )
+   (version 30)
+   (keys_author "Stock123")
 )
 (animalihavebecome
    (upgrade_version 1)
@@ -3224,17 +3311,32 @@
 )
 (breakingthegirl
    (upgrade_version 1)
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4 5))
+            (bass (6))
+            (guitar (7 8))
+            (vocals (9 10))
+            (keys (11 12))
+         )
+      )
+   )
    (rank
       (drum 242)
       (guitar 245)
       (bass 255)
       (vocals 130)
+      (keys 296)
       (real_guitar 245)
       (real_bass 345)
+      (real_keys 317)
       (band 212)
    )
+   (version 30)
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
+   (keys_author "BowlsforRick")
    (strings_author "RK")
 )
 (breakingthehabit
@@ -3352,6 +3454,54 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
 )
+(chinacatsunflower
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass 2)
+            (guitar (3 4))
+            (vocals (5 6))
+            (keys (7 8))
+         )
+      )
+   )
+   (rank
+      (drum 400)
+      (guitar 320)
+      (bass 350)
+      (vocals 270)
+      (keys 333)
+      (real_keys 427)
+      (band 335)
+   )
+   (version 30)
+   (keys_author "Stock123")
+)
+(coldrainandsnow
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 259)
+      (guitar 208)
+      (bass 358)
+      (vocals 160)
+      (keys 348)
+      (real_keys 348)
+      (band 306)
+   )
+   (version 30)
+   (keys_author "Stock123")
+)
 (constantmotion
    (song
       (tracks
@@ -3440,6 +3590,7 @@
       (real_keys 170)
       (band 200)
    )
+   (band_fail_cue band_fail_rock_keys.cue)
    (version 30)
    (real_guitar_tuning (-2 0 0 0 0 0))
    (real_bass_tuning (-2 0 0 0))
@@ -3537,6 +3688,60 @@
    (real_guitar_tuning (-2 0 0 0 0 0))
    (real_bass_tuning (-2 0 0 0))
    (strings_author "RK")
+)
+(dirtypool
+   (upgrade_version 1)
+   (rank
+      (drum 133)
+      (guitar 403)
+      (bass 215)
+      (vocals 325)
+      (real_guitar 454)
+      (real_bass 298)
+      (band 305)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "JDK")
+)
+(dointhatrag
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4))
+            (bass 5)
+            (guitar (6 7))
+            (vocals (8 9))
+            (keys (10 11))
+         )
+      )
+   )
+   (rank
+      (drum 285)
+      (guitar 229)
+      (bass 318)
+      (vocals 445)
+      (keys 363)
+      (real_keys 409)
+      (band 354)
+   )
+   (version 30)
+   (keys_author "Stock123")
+)
+(dontspeak
+   (upgrade_version 1)
+   (rank
+      (drum 189)
+      (guitar 240)
+      (bass 135)
+      (vocals 137)
+      (real_guitar 319)
+      (real_bass 283)
+      (band 183)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "Aloquendiar, JDK")
 )
 (dontstop
    (song
@@ -3648,6 +3853,21 @@
    (version 30)
    (keys_author "SonicSBL")
 )
+(enoughspace
+   (upgrade_version 1)
+   (rank
+      (drum 217)
+      (guitar 275)
+      (bass 240)
+      (vocals 250)
+      (real_guitar 216)
+      (real_bass 210)
+      (band 247)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "WarGod, Aloquendiar")
+)
 (feelgoodinc
    (upgrade_version 1)
    (rank
@@ -3694,6 +3914,21 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "JDK")
 )
+(floods
+   (upgrade_version 1)
+   (rank
+      (drum 210)
+      (guitar 334)
+      (bass 250)
+      (vocals 200)
+      (real_guitar 444)
+      (real_bass 379)
+      (band 269)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "MatthNerd")
+)
 (funkymonks
    (upgrade_version 1)
    (rank
@@ -3710,7 +3945,6 @@
    (strings_author "RK")
 )
 (getiton
-   (upgrade_version 1)
    (song
       (tracks
          (
@@ -3865,6 +4099,31 @@
       (keys 293)
       (real_keys 307)
       (band 225)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
+)
+(headknocker
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4 5))
+            (bass (6))
+            (guitar (7 8))
+            (vocals (9 10))
+            (keys (11 12))
+         )
+      )
+      (crowd_channels 13 14)
+   )
+   (rank
+      (drum 241)
+      (guitar 155)
+      (bass 159)
+      (vocals 239)
+      (keys 377)
+      (real_keys 409)
+      (band 199)
    )
    (version 30)
    (keys_author "BowlsforRick")
@@ -4085,6 +4344,30 @@
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
+)
+(ididntsayiwas
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2))
+            (guitar (3 4))
+            (vocals (5 6))
+            (keys (7 8))
+         )
+      )
+   )
+   (rank
+      (drum 213)
+      (guitar 253)
+      (bass 201)
+      (vocals 239)
+      (keys 413)
+      (real_keys 399)
+      (band 229)
+   )
+   (version 29)
+   (keys_author "Stock123")
 )
 (ifyouhavetoask
    (upgrade_version 1)
@@ -4382,6 +4665,30 @@
    (keys_author "BowlsforRick, Carl Mylo")
    (strings_author "WarGod, Carl Mylo, Ruggy")
 )
+(lovelikewinter
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4 5))
+            (bass 6)
+            (guitar (7 8))
+            (vocals (9 10))
+            (keys (11 12))
+         )
+      )
+   )
+   (rank
+      (drum 264)
+      (guitar 256)
+      (bass 212)
+      (vocals 180)
+      (keys 351)
+      (real_keys 334)
+      (band 242)
+   )
+   (version 30)
+   (keys_author "Stock123")
+)
 (lovespreads
    (song
       (tracks
@@ -4512,6 +4819,31 @@
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
+)
+(myoldschool
+   (song
+      (tracks
+         (
+            (drum (0 1 2))
+            (bass (3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+      (crowd_channels 10 11)
+   )
+   (rank
+      (drum 280)
+      (guitar 420)
+      (bass 258)
+      (vocals 168)
+      (keys 337)
+      (real_keys 372)
+      (band 300)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
 )
 (nakedintherain
    (upgrade_version 1)
@@ -4861,6 +5193,23 @@
    (version 30)
    (keys_author "Stock123")
 )
+(rearranged
+   (upgrade_version 1)
+   (rank
+      (drum 349)
+      (guitar 400)
+      (bass 266)
+      (vocals 172)
+      (keys 147)
+      (real_guitar 319)
+      (real_bass 316)
+      (real_keys 147)
+      (band 274)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "Airtrooper719, JDK")
+)
 (reinventingyourexit
    (song
       (tracks
@@ -4924,7 +5273,7 @@
    )
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
-   (strings_author "JDK_13")
+   (strings_author "JDK")
 )
 (rio
    (upgrade_version 1)
@@ -5036,6 +5385,21 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "Carl Mylo, RK")
 )
+(sandblastedskin
+   (upgrade_version 1)
+   (rank
+      (drum 491)
+      (guitar 362)
+      (bass 262)
+      (vocals 130)
+      (real_guitar 195)
+      (real_bass 170)
+      (band 425)
+   )
+   (real_guitar_tuning (-7 0 0 0 0 0))
+   (real_bass_tuning (-7 0 0 0))
+   (strings_author "MatthNerd")
+)
 (school
    (upgrade_version 1)
    (rank
@@ -5130,6 +5494,30 @@
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
+)
+(shepherdoffire
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass 2)
+            (guitar (3 4))
+            (vocals (5 6))
+            (keys (7 8))
+         )
+      )
+   )
+   (rank
+      (drum 251)
+      (guitar 460)
+      (bass 220)
+      (vocals 220)
+      (keys 112)
+      (real_keys 117)
+      (band 315)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
 )
 (shesnotthere
    (upgrade_version 1)
@@ -5247,6 +5635,21 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
 )
+(songwithamission
+   (upgrade_version 1)
+   (rank
+      (drum 200)
+      (guitar 200)
+      (bass 200)
+      (vocals 200)
+      (real_guitar 135)
+      (real_bass 175)
+      (band 200)
+   )
+   (real_guitar_tuning (0 0 0 0 0 0))
+   (real_bass_tuning (0 0 0 0))
+   (strings_author "MaverickNE")
+)
 (sonsanddaughters
    (upgrade_version 1)
    (song
@@ -5331,6 +5734,30 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "RK")
 )
+(superman
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4))
+            (bass 5)
+            (guitar (6 7))
+            (vocals (8 9))
+            (keys (10 11))
+         )
+      )
+   )
+   (rank
+      (drum 186)
+      (guitar 222)
+      (bass 236)
+      (vocals 170)
+      (keys 215)
+      (real_keys 215)
+      (band 209)
+   )
+   (version 30)
+   (keys_author "Stock123")
+)
 (tearsdontfall
    (upgrade_version 1)
    (rank
@@ -5359,7 +5786,31 @@
    )
    (real_guitar_tuning (0 0 0 0 0 0))
    (real_bass_tuning (0 0 0 0))
-   (strings_author "RK")
+   (strings_author "RK, JDK, Aloquendiar")
+)
+(tellherno
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2))
+            (guitar (3))
+            (vocals (4 5))
+            (keys (6))
+         )
+      )
+   )
+   (rank
+      (drum 211)
+      (guitar 204)
+      (bass 152)
+      (vocals 194)
+      (keys 267)
+      (real_keys 378)
+      (band 201)
+   )
+   (version 30)
+   (keys_author "Stock123")
 )
 (terriblelie
    (upgrade_version 1)
@@ -5524,6 +5975,30 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "WarGod")
 )
+(timeforchange
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4))
+            (bass (5 6))
+            (guitar (7 8))
+            (vocals (9 10))
+            (keys (11 12))
+         )
+      )
+   )
+   (rank
+      (drum 141)
+      (guitar 201)
+      (bass 138)
+      (vocals 108)
+      (keys 233)
+      (real_keys 313)
+      (band 155)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
+)
 (tomsawyer2
    (upgrade_version 1)
    (song
@@ -5553,6 +6028,31 @@
    (real_bass_tuning (0 0 0 0))
    (keys_author "JIManji")
    (strings_author "RK")
+)
+(towncalledmalice
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4))
+            (bass (5))
+            (guitar (6 7))
+            (vocals (8 9))
+            (keys (10 11))
+         )
+      )
+      (crowd_channels 12 13)
+   )
+   (rank
+      (drum 274)
+      (guitar 280)
+      (bass 248)
+      (vocals 184)
+      (keys 286)
+      (real_keys 221)
+      (band 275)
+   )
+   (version 30)
+   (keys_author "Stock123")
 )
 (toxicity
    (upgrade_version 1)
@@ -6002,6 +6502,30 @@
    (real_bass_tuning (0 0 0 0))
    (strings_author "WarGod")
 )
+(underneathitall
+   (song
+      (tracks
+         (
+            (drum (0 1 2 3 4))
+            (bass 5)
+            (guitar (6 7))
+            (vocals (8 9))
+            (keys (10 11))
+         )
+      )
+   )
+   (rank
+      (drum 217)
+      (guitar 179)
+      (bass 115)
+      (vocals 141)
+      (keys 220)
+      (real_keys 317)
+      (band 177)
+   )
+   (version 29)
+   (keys_author "Stock123, Aloquendiar")
+)
 (undone
    (upgrade_version 1)
    (rank
@@ -6324,6 +6848,30 @@
    (version 30)
    (keys_author "Linos Melendi")
 )
+(iwillfollow
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 169)
+      (guitar 112)
+      (bass 128)
+      (vocals 106)
+      (keys 221)
+      (real_keys 278)
+      (band 124)
+   )
+   (version 30)
+   (keys_author "SonicSBL")
+)
 (kickitout
    (song
       (tracks
@@ -6448,6 +6996,30 @@
    (real_bass_tuning (-1 -1 -1 -1))
    (keys_author "GHtoRB3")
    (strings_author "Ruggy")
+)
+(spiders
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 163)
+      (guitar 144)
+      (bass 155)
+      (vocals 342)
+      (keys 89)
+      (real_keys 92)
+      (band 189)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
 )
 (stillintoyou
    (upgrade_version 1)
@@ -7006,6 +7578,30 @@
    (version 30)
    (keys_author "Nyxyxylyth")
 )
+(icantdrive55
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 355)
+      (guitar 255)
+      (bass 205)
+      (vocals 255)
+      (keys 197)
+      (real_keys 197)
+      (band 255)
+   )
+   (version 30)
+   (keys_author "SonicSBL")
+)
 (jane
    (upgrade_version 1)
    (song
@@ -7134,6 +7730,55 @@
       (keys 213)
       (real_keys 213)
       (band 248)
+   )
+   (version 30)
+   (keys_author "SonicSBL")
+)
+(lonelyisthenight
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 185)
+      (guitar 285)
+      (bass 348)
+      (vocals 310)
+      (keys 80)
+      (real_keys 80)
+      (band 282)
+   )
+   (version 30)
+   (keys_author "SonicSBL")
+)
+(loveinanelevator
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2))
+            (guitar (3 4))
+            (vocals (5 6))
+            (keys (7 8))
+         )
+      )
+      (crowd_channels 9 10)
+   )
+   (rank
+      (drum 245)
+      (guitar 276)
+      (bass 280)
+      (vocals 350)
+      (keys 356)
+      (real_keys 356)
+      (band 270)
    )
    (version 30)
    (keys_author "SonicSBL")
@@ -7299,12 +7944,12 @@
       (guitar 345)
       (bass 330)
       (vocals 245)
-      (keys 1)
-      (real_keys 1)
+      (keys 287)
+      (real_keys 293)
       (band 280)
    )
    (version 30)
-   (keys_author "EdTanguy")
+   (keys_author "EdTanguy, BowlsforRick")
 )
 (seasonsofwither
    (upgrade_version 1)
@@ -7453,6 +8098,30 @@
    )
    (version 30)
    (keys_author "SonicSBL")
+)
+(thecomamachine
+   (song
+      (tracks
+         (
+            (drum (0 1))
+            (bass (2 3))
+            (guitar (4 5))
+            (vocals (6 7))
+            (keys (8 9))
+         )
+      )
+   )
+   (rank
+      (drum 495)
+      (guitar 425)
+      (bass 429)
+      (vocals 300)
+      (keys 257)
+      (real_keys 279)
+      (band 442)
+   )
+   (version 30)
+   (keys_author "BowlsforRick")
 )
 (thembones
    (upgrade_version 1)
