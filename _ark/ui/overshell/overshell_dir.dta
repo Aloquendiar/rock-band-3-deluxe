@@ -75,8 +75,11 @@
                options_extras
                modifiers
                options_end_game
-               options_vanilla_plus
                linking_code
+               options_vanilla_plus
+               options_graphics
+               options_amazing
+               options_audioextra
                reconnect_controller
                kick_users
                mute_users
@@ -841,7 +844,7 @@
                      {{gamemode get game_panel} set_metronome_volume {$component current} 12}
                   }
                )
-               (midi_synth.sld $synth_vol {$component current}) ;Mismo caso que los checks
+               ;(midi_synth.sld $synth_vol {$component current}) ;Mismo caso que los checks
             }
          )
          (update_cancel_song
