@@ -75,6 +75,7 @@
                options_extras
                modifiers
                options_end_game
+               options_vanilla_plus
                linking_code
                reconnect_controller
                kick_users
@@ -172,9 +173,29 @@
             {options_extras.lst set_data
                (overshell_credits
                   overshell_linking_code
+                  refresh_library
+                  overshell_plus_settings
                   #ifdef HX_XBOX
                   overshell_audition
                   #endif
+               )
+            }
+            {options_vanilla_plus.lst set_data
+               (overshell_graphics_options
+                  overshell_amazing_options
+                  overshell_audioextra_options
+               )
+            }
+            {options_graphics.lst set_data
+               (overshell_vysnc
+                  overshell_ps3_perpixel_lighting
+                  overshell_max_lod
+                  overshell_frame_rate
+               )
+            }
+            {options_amazing.lst set_data
+               (overshell_lyrics
+                  overshell_countdown
                )
             }
             {choose_char_edit.lst set_data

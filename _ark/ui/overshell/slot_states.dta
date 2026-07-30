@@ -924,6 +924,12 @@
    (SELECT_MSG
       {switch {$component selected_sym}
          (overshell_credits {$this show_enter_credits})
+         (refresh_library
+            {if {! {session is_in_game}}
+               {content_mgr remove_content kDataUnhandled}
+               {content_mgr start_refresh}
+            }
+         )
          (overshell_linking_code
             {if_else {&& {$user can_save_data} {$user is_signed_in_online}}
                {$this show_linking_code}
@@ -937,6 +943,7 @@
                #endif
             }
          )
+         (overshell_plus_settings {$this show_state kState_OptionsVanillaPlus}) ;Como los estados estaban codeados en c++ esto se tiene  que hacer si es via dta
          (overshell_audition
             #ifdef HX_XBOX
             {cond
@@ -1061,6 +1068,29 @@
       }
    )
    (SELECT_MSG {$this show_options_extras})
+)
+(kState_OptionsVanillaPlus
+   (view options_vanilla_plus)
+   (SELECT_MSG
+      {switch {$component selected_sym}
+         (overshell_graphics_options {$this show_state kState_OptionsGraphics})
+         (overshell_amazing_options {$this options_vanilla_plus})
+         (overshell_audioextra_options {$this options_vanilla_plus})
+      }
+   )
+   (on_cancel {$this show_options_extras})
+)
+(kState_OptionsGraphics
+   (view options_graphics)
+   (SELECT_MSG
+      {switch {$component selected_sym}
+         (overshell_vysnc {$this show_state kState_OptionsGraphics})
+         (overshell_ps3_perpixel {$this show_state kState_OptionsGraphics})
+         (overshell_max_lod {$this show_state kState_OptionsGraphics})
+         (overshell_frame_rate {$this show_state kState_OptionsGraphics})
+      }
+   )
+   (on_cancel {$this show_state kState_OptionsVanillaPlus})
 )
 (kState_SaveloadManagerNotIdle
    (view confirm_action)
