@@ -1069,13 +1069,14 @@
    )
    (SELECT_MSG {$this show_options_extras})
 )
+;Vanilla Plus Options
 (kState_OptionsVanillaPlus
    (view options_vanilla_plus)
    (SELECT_MSG
       {switch {$component selected_sym}
          (overshell_graphics_options {$this show_state kState_OptionsGraphics})
-         (overshell_amazing_options {$this options_vanilla_plus})
-         (overshell_audioextra_options {$this options_vanilla_plus})
+         (overshell_amazing_options {$this show_state kState_OptionsAmazing})
+         (overshell_audioextra_options {$this show_state kState_OptionsAudioExtra})
       }
    )
    (on_cancel {$this show_options_extras})
@@ -1084,7 +1085,7 @@
    (view options_graphics)
    (SELECT_MSG
       {switch {$component selected_sym}
-         (overshell_vysnc {$this show_state kState_OptionsGraphics})
+         (overshell_vsync {$this show_state kState_OptionsGraphics})
          (overshell_ps3_perpixel {$this show_state kState_OptionsGraphics})
          (overshell_max_lod {$this show_state kState_OptionsGraphics})
          (overshell_frame_rate {$this show_state kState_OptionsGraphics})
@@ -1092,6 +1093,27 @@
    )
    (on_cancel {$this show_state kState_OptionsVanillaPlus})
 )
+(kState_OptionsAmazing
+   (view options_amazing)
+   (SELECT_MSG
+      {switch {$component selected_sym}
+         (overshell_lyrics {$this show_state kState_OptionsAmazing})
+         (overshell_countdown {$this show_state kState_OptionsAmazing})
+      }
+   )
+   (on_cancel {$this show_state kState_OptionsVanillaPlus})
+)
+(kState_OptionsAudioExtra
+   (view options_audioextra)
+   (SELECT_MSG
+      {switch {$component selected_sym}
+         (overshell_midi_synth_vol {$this show_state kState_OptionsAudioExtra})
+         (overshell_midi_synth_type {$this show_state kState_OptionsAudioExtra})
+      }
+   )
+   (on_cancel {$this show_state kState_OptionsVanillaPlus})
+)
+;End Vanilla Plus Options
 (kState_SaveloadManagerNotIdle
    (view confirm_action)
    (enter {handle ($this set_confirm_message options_autosave_toggle)})

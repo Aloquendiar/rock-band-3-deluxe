@@ -187,7 +187,7 @@
                )
             }
             {options_graphics.lst set_data
-               (overshell_vysnc
+               (overshell_vsync
                   overshell_ps3_perpixel_lighting
                   overshell_max_lod
                   overshell_frame_rate
@@ -196,6 +196,11 @@
             {options_amazing.lst set_data
                (overshell_lyrics
                   overshell_countdown
+               )
+            }
+            {options_audioextra.lst set_data
+               (overshell_midi_synth_vol
+                  overshell_midi_synth_type
                )
             }
             {choose_char_edit.lst set_data
@@ -710,6 +715,22 @@
             ($static_enabled)
             {static_vocals.chk set checked $static_enabled}
          )
+         ;Vanilla plus checks
+         ; (update_vsync_check
+         ;    {vsync.chk set checked $vsync_enabled} ;Aunque todavia no esta implementado, dejare esto para el futuro
+         ; )
+         ; (update_ps3_perpixel_check
+         ;    {ps3_perpixel.chk set checked $ps3_perpixel_enabled}
+         ; )
+         ; (update_max_lod_check
+         ;    {max_lod.chk set checked $max_lod_enabled}
+         ; )
+         ; (update_lyrics_check
+         ;    {lyrics.chk set checked $lyrics_enabled}
+         ; )
+         ; (update_countdown_check
+         ;    {countdown.chk set checked $countdown_enabled}
+         ; )
          (update_linking_code
             ($waiting $success $code $profile)
             {linking_code_wait.grp set_showing $waiting}
@@ -820,6 +841,7 @@
                      {{gamemode get game_panel} set_metronome_volume {$component current} 12}
                   }
                )
+               (midi_synth.sld $synth_vol {$component current}) ;Mismo caso que los checks
             }
          )
          (update_cancel_song
