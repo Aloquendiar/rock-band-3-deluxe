@@ -7,7 +7,7 @@
 * It's a pkg in .zip just extract it and install it on your ps3
 ## TODO 1
  These are features I would like to support in the future, but it may take me a while to read through them before porting them.
-* [ ] Author Finder (Source and author name only)
+* [ ] Author Finder (Source and author name only) We can get now the origin, now we need the author
 * The rest of the metadata is not very relevant to be honest.
 * [ ] Lyric display
 * [ ] Golden Stars Animation
