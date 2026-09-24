@@ -3,16 +3,22 @@
       ($before $after)
       {&& {> $mp.before_delta_sec $before} {> $mp.after_delta_sec $after}}
    }
+   {func game_origin
+      {if_else {&& {exists meta_performer} {exists song_mgr}}
+         {{song_mgr get_meta_data {meta_performer song}} is_ugc} ; Is_ugc now returns the game origin
+         ""
+      }
+   }   
    {func is_ver_30
       {&&
          {exists meta_performer}
          {exists song_mgr}
          {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-         {||
-            {< {{song_mgr get_meta_data {meta_performer song}} id} 1010001}
-            {> {{song_mgr get_meta_data {meta_performer song}} id} 1010642}
-         }
-         ;{!{'||' {== $sourcevar rb3} {== $sourcevar rb3_dlc} {== $sourcevar rb3dlc} {== $sourcevar blitz}}}
+         ; {||
+         ;    {< {{song_mgr get_meta_data {meta_performer song}} id} 1010001}
+         ;    {> {{song_mgr get_meta_data {meta_performer song}} id} 1010642} legacy code pre game origin patch
+         ; }
+         {!{'||'{== {game_origin} rb3} {== {game_origin} rb3_dlc} {== {game_origin} rb3dlc} {== {game_origin} blitz}}}
       }
    }
    {func is_ver_29
@@ -34,12 +40,12 @@
             }
          }
          {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-         {||
-            {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000}
-            {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
-         }
+         ; {||
+         ;    {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000} legacy code pre game origin patch
+         ;    {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
+         ; }
          ; este codigo es un prototipo debido a que no me se el rango exacto que separa a rbn 1 de 2
-         ;{!= $sourcevar ugc2} ; This is necessary to avoid problems with rbn 2.0 stuff
+         {!= {game_origin} ugc2} ; This is necessary to avoid problems with rbn 2.0 stuff
       }
    }
    {new MidiParser
@@ -2192,19 +2198,24 @@
                (track_name VENUE)
                (init
                   {set [zero_length] TRUE}
-                  {set [enabled] 
+                  {set [enabled]
                      {&& {is_ver_30}
-                         {|| 
-                           {||
-                              {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000}
-                              {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
+                           {!{&& {file_exists {sprint "songs/updates/" {meta_performer song} "/" {meta_performer song} "_update.mid"}}
+                            {== {{song_mgr get_meta_data {meta_performer song}} version} 30}}
                            }
-                           {! {&& 
-                              {file_exists {sprint "songs/updates/" {meta_performer song} "/" {meta_performer song} "_update.mid"}}
-                              {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-                           }}
-                         }
                      }
+                     ; {&& {is_ver_30}
+                     ;     {|| 
+                     ;       {||
+                     ;          {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000}
+                     ;          {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
+                     ;       }
+                     ;       {! {&& 
+                     ;          {file_exists {sprint "songs/updates/" {meta_performer song} "/" {meta_performer song} "_update.mid"}}
+                     ;          {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
+                     ;       }}
+                     ;     }
+                     ; } ni se que escribi aqui
                   }
                )
                (text
@@ -2234,10 +2245,12 @@
                      {|| {! {is_ver_30}}
                         {&& {file_exists {sprint "songs/updates/" {meta_performer song} "/" {meta_performer song} "_update.mid"}}
                         {== {{song_mgr get_meta_data {meta_performer song}} version} 30}
-                        {!={||
-                           {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000}
-                           {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
-                        }}} ; This is necessary to avoid problems with rbn 2.0 stuff, perhaps unnecessary, but if this causes problems I'll fix it quickly.
+                        {!= {game_origin} ugc2}
+                        ; {!={||
+                        ;    {< {{song_mgr get_meta_data {meta_performer song}} id} 5000000}
+                        ;    {> {{song_mgr get_meta_data {meta_performer song}} id} 6000000}
+                        ; }}} ; This is necessary to avoid problems with rbn 2.0 stuff, perhaps unnecessary, but if this causes problems I'll fix it quickly.
+                        }
                      }
                   }
                )
@@ -2285,7 +2298,7 @@
                (allow_keys FALSE)
                (init
                   {set [start_offset] 0.25}
-                  {set [allow_keys]{'||' {is_ver_29} {is_ver_30}}}) ;This activates the function if it is version 29 or version 30
+                  {set [allow_keys] {'||' {is_ver_29} {is_ver_30}}}) ;This activates the function if it is version 29 or version 30
                (allowed_notes (37 38 39 40 41))
                (get_instrument
                   {switch $mp.val

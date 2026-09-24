@@ -631,6 +631,12 @@
 (85)
 #define kState_EnterWiiSpeakOptions
 (128)
+;Vanilla Plus
+#define kState_OptionsVanillaPlus (207)
+#define kState_OptionsGraphics (208)
+#define kState_OptionsAmazing (209)
+#define kState_OptionsAudioExtra (210)
+;End Vanilla Plus
 #define kOverrideFlow_None
 (0)
 #define kOverrideFlow_SongSettings
