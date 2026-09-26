@@ -924,8 +924,7 @@
                         {gamemode in_mode trainer}}
                      {if_else
                         {&&
-                           {!
-                              {$item is_ugc}}
+                           {! {== {$item is_ugc} ugc_plus}} ; I forgot this
                            {'||'
                               {&&
                                  {==
