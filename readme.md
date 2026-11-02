@@ -26,7 +26,7 @@ This doesn't mean that there may be other functions implemented here, but I need
 
 [Mackiloha](https://github.com/PikminGuts92/Mackiloha) - ArkHelper for building Deluxe - SuperFreq for building .bmp_xbox highway images
 
-[swap_rb_art_bytes.py](https://github.com/PikminGuts92/re-notes/blob/master/scripts/swap_rb_art_bytes.py) - Python script for converting Xbox images to PS3
+[swap_rb_art_bytes.py](https://github.com/PikminGuts92/re-notes/blob/master/scripts/swap_rb_art_bytes.py) - Python script for converting Xbox images to PS3.
 
 [dtab](https://github.com/mtolly/dtab) - For serializing `.dtb` script files
 
