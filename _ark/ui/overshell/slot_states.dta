@@ -1106,7 +1106,7 @@
             }
             {$this update_max_lod_check}
          )
-         (overshell_frame_rate {$this show_state kState_OptionsGraphics})
+         (overshell_frame_rate {rnd toggle_overlay rate})
       }
    )
    (on_cancel {$this show_state kState_OptionsVanillaPlus})
