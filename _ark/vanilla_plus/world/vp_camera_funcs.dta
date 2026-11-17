@@ -1,17 +1,46 @@
 {func dx_ultra_shadows
-      {ui foreach_screen $screen
-         {$screen foreach_panel $panel
-            {if {$panel loaded_dir}
-               {{$panel loaded_dir} iterate RndDir $b
-                  {$b iterate BandCamShot $d
-                     {$d set self_shadow $enabled}
-                     {$d set ps3_per_pixel $enabled}
-                  }
-                  {$b iterate BandCharacter $c
-                     {$c set self_shadow $enabled}
+   ($enabled)
+   {do
+      ($per_pixel {&& $enabled {! {gamemode in_mode practice}}})
+      {if $enabled
+         {ui foreach_screen $screen
+            {$screen foreach_panel $panel
+               {if {$panel loaded_dir}
+                  {{$panel loaded_dir} iterate RndDir $b
+                     {$b iterate BandCamShot $d
+                        {$d set self_shadow $enabled}
+                        {$d set ps3_per_pixel {&& $per_pixel {! {find_elem (VENUES_VIDEO) {$b name}}}}}
+                     }
+                     {$b iterate BandCharacter $c
+                        {$c set self_shadow $enabled}
+                     }
                   }
                }
             }
          }
       }
+   }
+}
+{func
+   dx_force_lod_setter
+   ($world)
+   ;{dx_log_writer insane {sprint "func: dx_force_lod_setter"}}
+   ;{dx_log_writer insane
+   ;   {sprintf "Executed dx_force_lod_setter - time: %.4fms"
+   ;      {time
+            {if $max_lod
+               {$world iterate WorldDir $wd
+                  {$wd iterate BandCamShot $bcs
+                     {do
+                        ($dx_num_targets {$bcs size (targets)})
+                        {foreach_int $i 0 $dx_num_targets
+                           {$bcs set (targets $i force_lod) kLOD0}
+                        }
+                     }
+                  }
+               }
+            }
+   ;      }
+   ;   }
+   ;}
 }

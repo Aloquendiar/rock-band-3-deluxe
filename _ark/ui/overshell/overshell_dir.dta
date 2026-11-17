@@ -178,6 +178,7 @@
                   overshell_linking_code
                   refresh_library
                   overshell_plus_settings
+                  overshell_overview_heap
                   #ifdef HX_XBOX
                   overshell_audition
                   #endif
@@ -719,15 +720,15 @@
             {static_vocals.chk set checked $static_enabled}
          )
          ;Vanilla plus checks
-         ; (update_vsync_check
-         ;    {vsync.chk set checked $vsync_enabled} ;Aunque todavia no esta implementado, dejare esto para el futuro
-         ; )
-         ; (update_ps3_perpixel_check
-         ;    {ps3_perpixel.chk set checked $ps3_perpixel_enabled}
-         ; )
-         ; (update_max_lod_check
-         ;    {max_lod.chk set checked $max_lod_enabled}
-         ; )
+         (update_vsync_check
+            {vsync.chk set checked $vsync_enabled} ;Ya empezamos a portear cada cosa
+         )
+         (update_ps3_perpixel_check
+            {ps3_perpixel.chk set checked $ps3_perpixel}
+         )
+         (update_max_lod_check
+            {max_lod.chk set checked $max_lod}
+         )
          ; (update_lyrics_check
          ;    {lyrics.chk set checked $lyrics_enabled}
          ; )

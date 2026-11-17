@@ -925,7 +925,10 @@
       {switch {$component selected_sym}
          (overshell_credits {$this show_enter_credits})
          (refresh_library
-            {rnd toggle_heap}
+            {if {! {session is_in_game}}
+               {content_mgr remove_content kDataUnhandled}
+               {content_mgr start_refresh}
+            }
          )
          (overshell_linking_code
             {if_else {&& {$user can_save_data} {$user is_signed_in_online}}
@@ -941,6 +944,7 @@
             }
          )
          (overshell_plus_settings {$this show_state kState_OptionsVanillaPlus}) ;Como los estados estaban codeados en c++ esto se tiene  que hacer si es via dta
+         (overshell_overview_heap {rnd toggle_heap})
          (overshell_audition
             #ifdef HX_XBOX
             {cond
@@ -1080,11 +1084,28 @@
 )
 (kState_OptionsGraphics
    (view options_graphics)
+   (update_view
+      {handle ($this update_vsync_check)}
+      {handle ($this update_ps3_perpixel_check)}
+      {handle ($this update_max_lod_check)}
+   )
    (SELECT_MSG
       {switch {$component selected_sym}
-         (overshell_vsync {$this show_state kState_OptionsGraphics})
-         (overshell_ps3_perpixel {$this show_state kState_OptionsGraphics})
-         (overshell_max_lod {$this show_state kState_OptionsGraphics})
+         (overshell_vsync {$this update_vsync_check})
+         (overshell_ps3_perpixel_lighting
+            {set $ps3_perpixel {! $ps3_perpixel}}
+            {if $ps3_perpixel
+               {dx_ultra_shadows $ps3_perpixel}
+            }
+            {$this update_ps3_perpixel_check}
+         )
+         (overshell_max_lod
+            {set $max_lod {! $max_lod}}
+            {if {&& $max_lod $world}
+               {dx_force_lod_setter $world}
+            }
+            {$this update_max_lod_check}
+         )
          (overshell_frame_rate {$this show_state kState_OptionsGraphics})
       }
    )

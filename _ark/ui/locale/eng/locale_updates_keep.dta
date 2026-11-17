@@ -176,3 +176,13 @@
 (ugc2 "Rock Band Network 2.0")
 (ugc1 "Rock Band Network 1.0")
 (ugc "Custom Songs")
+;New Overshell Entry
+(refresh_library "Reload Songs")
+(overshell_plus_settings "Vanilla Plus Settings")
+(overshell_overview_heap "Heap Overlay")
+(overshell_graphics_options "Graphics Settings")
+(overshell_amazing_options "Amazing Settings")
+(overshell_audioextra_options "Extra Audio Settings")
+(overshell_ps3_perpixel_lighting "Per-pixel lighting")
+(overshell_max_lod "Max LOD")
+(overshell_frame_rate "Framerate: x")

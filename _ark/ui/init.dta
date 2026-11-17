@@ -5,6 +5,7 @@
 (1)
 #include global.dta
 #include cheats_funcs.dta
+#include ../vanilla_plus/world/vp_camera_funcs.dta
 #include choose_color.dta
 #include closet.dta
 #include game.dta
@@ -47,4 +48,7 @@
 #endif
 {platform_mgr set_notify_ui_location kOSNotifyBottomCenter}
 {set $saveload_skip_upload FALSE}
+{set $max_lod TRUE}
+{set $ps3_perpixel FALSE}
+{set $dx_apply_postproc TRUE}
 #endif
