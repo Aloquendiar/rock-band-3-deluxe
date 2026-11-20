@@ -1113,6 +1113,10 @@
 )
 (kState_OptionsAmazing
    (view options_amazing)
+   (update_view
+      {handle ($this update_lyrics_check)}
+      {handle ($this update_countdown_check)}
+   )
    (SELECT_MSG
       {switch {$component selected_sym}
          (overshell_lyrics {$this show_state kState_OptionsAmazing})

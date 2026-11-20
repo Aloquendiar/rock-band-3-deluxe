@@ -729,12 +729,12 @@
          (update_max_lod_check
             {max_lod.chk set checked $max_lod}
          )
-         ; (update_lyrics_check
-         ;    {lyrics.chk set checked $lyrics_enabled}
-         ; )
-         ; (update_countdown_check
-         ;    {countdown.chk set checked $countdown_enabled}
-         ; )
+         (update_lyrics_check
+            {lyrics.chk set checked $lyrics_enabled}
+         )
+         (update_countdown_check
+            {countdown.chk set checked $countdown_enabled}
+         )
          (update_linking_code
             ($waiting $success $code $profile)
             {linking_code_wait.grp set_showing $waiting}
